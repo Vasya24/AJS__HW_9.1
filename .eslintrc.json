@@ -1,7 +1,8 @@
 {
     "env": {
         "browser": true,
-        "es6": true
+        "es6": true,
+        "jest": true
     },
     "extends": [
         "airbnb-base"
@@ -11,9 +12,18 @@
         "SharedArrayBuffer": "readonly"
     },
     "parserOptions": {
-        "ecmaVersion": 11,
+        "ecmaVersion": 2018,
         "sourceType": "module"
     },
     "rules": {
+        "import/extensions": [
+            "error",
+            "ignorePackages"
+            ],
+            "no-restricted-syntax": [
+                "error",
+                "LabeledStatement",
+                "WithStatement"
+            ]
     }
 }

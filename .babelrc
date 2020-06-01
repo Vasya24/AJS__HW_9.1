@@ -7,5 +7,6 @@
     }
     ]
     ],
-    "plugins": ["transform-flow-strip-types","transform-class-properties"]
+    "plugins": ["@babel/plugin-transform-flow-strip-types"]
+    // "plugins": ["transform-flow-strip-types","transform-class-properties"]
 }
